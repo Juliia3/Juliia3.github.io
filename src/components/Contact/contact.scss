@@ -1,0 +1,94 @@
+@import '../../assets/styles/variables/fonts.scss';
+@import '../../assets/styles/variables/colors.scss';
+@import '../../assets/styles/variables/sizing.scss';
+
+.contact {
+    padding: 200px 0;
+   
+
+    &__block1 {
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        @media (max-width: $phone-size) {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__block1-text {
+        max-width: 474px;
+        @media (max-width: $phone-size) {
+            max-width: 306px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 78px;
+    }
+
+    &__text {
+        font-size: $text3-size;
+        margin-bottom: 28px;
+        @media (max-width: $phone-size) {
+            display: none;
+        }
+    }
+
+    &__text-mob {
+        display: none;
+        @media (max-width: $phone-size) {
+            display: block;
+            font-size: $text3-size;
+            margin-bottom: 28px;
+            padding-top: 50px;
+        }
+    }
+
+    &__button {
+        display: block;
+        @media (max-width: $phone-size) {
+            display: none;
+        }
+    }
+
+    &__button-mob {
+        display: none;
+        @media (max-width: $phone-size) {
+            display: block;
+        }
+    }
+
+    &__block1-img {
+        position: relative;
+        width: 445px;
+        height: 455px;
+        @media (max-width: $phone-size) {
+            max-width: 330px;
+            height: 330px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+    }
+
+    .img1 {
+        max-width: 426px;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        @media (max-width: $phone-size) {
+            max-width: 306px;
+        }
+
+    }
+
+    .img2 {
+        left: 0;
+        bottom: 0;
+        @media (max-width: $phone-size) {
+            max-width: 306px;
+        }
+    }
+}

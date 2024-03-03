@@ -1,0 +1,70 @@
+@import '../../assets/styles/variables/fonts.scss';
+@import '../../assets/styles/variables/colors.scss';
+@import '../../assets/styles/variables/sizing.scss';
+
+.games {
+    padding: 170px 0;
+
+    &__title {
+        font-weight: $bold-weight;
+        margin-bottom: 41px;
+    }
+
+    &__text {
+        font-size: $text3-size;
+        margin-bottom: 60px;
+    }
+
+    &__block {
+        margin-bottom: 130px;
+    }
+
+    &__game1 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .games-block-img {
+        @media (max-width: $phone-size) {
+            display: none;
+        }
+    }
+
+    .games-block-img-mob {
+        display: none;
+        @media (max-width: $phone-size) {
+            display: block;
+        }
+    }
+
+    &__game-mob {
+        width: 90%;
+    }
+
+    // .anim-box {
+    //     overflow: hidden;
+    // }
+
+    // ._anim-show {
+    //     transform: translate(-120%, 0);
+    //     opacity: 0;
+    //     transition: all 1.5s ease 0s;   
+    // }
+
+    // ._anim-show._active,
+    // ._active ._anim-show {
+    //     opacity: 1;
+    //     transform: translate(0px, 0px);
+    // }
+
+    .red {
+        color: red;
+    }
+
+    &__title2 {
+        font-size: $text2-size;
+        color: $color-white;
+        margin-bottom: 41px;
+    }
+}
+

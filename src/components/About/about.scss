@@ -1,0 +1,297 @@
+@import '../../assets/styles/variables/fonts.scss';
+@import '../../assets/styles/variables/colors.scss';
+@import '../../assets/styles/variables/sizing.scss';
+
+.about {
+    padding: 170px 0 410px 0;
+    @media (max-width: $phone-size) {
+        padding-bottom: 200px;
+    }
+
+    &__title {
+        margin-bottom: 70px;
+    }
+
+    &__text {
+        margin-bottom: 98px;
+    }
+
+    &__block1-img{
+        width: 100%;
+        height: 430px;
+        position: relative;
+        margin-bottom: 98px;
+        @media (max-width: $phone-size) {
+            display: none;
+        }
+    }
+    &__img1 {
+        position: absolute;
+    }
+
+    .wave {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+    .img1 {
+        width: 95%;
+        top: 0;
+        right: 0;
+    }
+
+    &__img-mobile-block {
+        display: none;
+        @media (max-width: $phone-size) {
+            display: block;
+            position: relative;
+            height: 320px;
+            margin-bottom: 70px;
+        }
+       }
+
+       .mob-img {
+        @media (max-width: $phone-size) {
+            display: block;
+            width: 100%;
+            position: absolute;
+        }
+       }
+    
+       .mob1 {
+        @media (max-width: $phone-size) {
+            width: 90%;
+            left: 0;
+            top: 0;
+            z-index: 10000;
+        }
+       }
+    
+       .wave-mob1 {
+        @media (max-width: $phone-size) {
+            width: 95%;
+            right: 0;
+            bottom: 0;
+        }
+       }
+
+    &__text-list {
+        margin-bottom: 120px;
+    }
+
+    &__text-item {
+        margin-bottom: 10px;
+        font-size: $text3-size;
+        @media (max-width: $phone-size) {
+            font-size: $text5-size;
+        }
+    }
+
+    .item1 {
+        background: linear-gradient(90deg, rgba(255, 0, 55, 0.25) 3.77%, rgba(0, 0, 0, 0.00) 97.79%);
+        padding: 25px 360px 30px 78px;
+        @media (max-width: $phone-size) {
+            padding: 19px 29px;
+        }
+    }
+
+    .item2 {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 3.77%, rgba(255, 0, 55, 0.25) 97.79%);
+        padding: 25px 78px 30px 360px;
+        @media (max-width: $phone-size) {
+            padding: 19px 29px;
+        }
+    }
+
+    &__list2 {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 184px;
+        @media (max-width: $phone-size) {
+            flex-direction: column;
+            width: 85%;
+            margin: 0 auto;
+            font-size: $text6-size;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__item1-block {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        max-width: 420px;
+        @media (max-width: $phone-size) {
+            gap: 33px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 33px;
+        align-items: center;
+        line-height: 30px; 
+        letter-spacing: -0.4px;
+    }
+
+    &__block2-img{
+        width: 100%;
+        height: 550px;
+        position: relative;
+        margin-bottom: 98px;
+        @media (max-width: $phone-size) {
+            display: none;
+        }
+    }
+
+    &__img2 {
+        position: absolute;
+    }
+
+    .wave2 {
+        width: 100%;
+        right: 0;
+        top: 0;
+    }
+    .img2 {
+        width: 97%;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__team-title {
+        margin-bottom: 97px;
+    }
+
+    &__team-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        @media (max-width: $phone-size) {
+            display: none;
+        }
+    }
+
+    &__team1 {
+        display: flex;
+    }
+
+    &__person {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(255, 0, 55, 0.25) 100%);
+        padding: 36px 65px 76px 75px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        @media (max-width: $phone-size) {
+            padding: 36px 30px 100px 30px;
+            height: 869px;
+        }
+    }
+
+    .person2 {
+        background: linear-gradient(180deg, rgba(113, 31, 48, 0.25) 0%, rgba(0, 0, 0, 0.00) 100%);
+    }
+
+    &__person-img {
+        margin-bottom: 42px;
+    }
+
+    &__person-title {
+        margin-bottom: 38px;
+    }
+
+    &__person-position {
+        margin-bottom: 37px;
+    }
+
+    &__person-name2 {
+        margin-bottom: 67px;
+    }
+
+    .about__block3 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 40px;
+        line-height: 30px;
+        transition: max-height 0.3s ease-in-out;
+      }
+    
+      &__block3 li:before {
+        content: "•"; 
+        margin-right: 0.5em; 
+        padding: 0 4px;
+      }
+
+      .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: $color-white;
+      }
+      
+
+      .swiper-pagination .swiper-pagination-bullet {
+        background-color: #cccccc; 
+      }
+
+      &__team-block-mob {
+        display: none;
+        @media (max-width: $phone-size) {
+            display: block;
+        }
+      }
+
+    //   .anim-box {
+    //     overflow: hidden;
+    // }
+
+    // ._anim-show {
+    //     transform: translate(-120%, 0);
+    //     opacity: 0;
+    //     transition: all 0.8s ease 0s;   
+    // }
+
+    // ._anim-show._active,
+    // ._active ._anim-show {
+    //     opacity: 1;
+    //     transform: translate(0px, 0px);
+    // }
+
+    // ._anim-show-left {
+    //     transform: translate(220%, 0);
+    //     opacity: 0;
+    //     transition: all 1.5s ease 0s;   
+    // }
+
+    // ._anim-show._active,
+    // ._active ._anim-show-left {
+    //     opacity: 1;
+    //     transform: translate(0px, 0px);
+    // }
+
+    // ._anim-show-down {
+    //     transform: translate(0, -220%);
+    //     opacity: 0;
+    //     transition: all 1.5s ease 0s;   
+    // }
+
+    // ._anim-show._active,
+    // ._active ._anim-show-down {
+    //     opacity: 1;
+    //     transform: translate(0px, 0px);
+    // }
+
+    // .wave {
+    //     width: 100%;
+    //     left: 0;
+    //     bottom: 0;
+    // }
+    // .img1 {
+    //     width: 95%;
+    //     top: 0;
+    //     right: 0;
+    // }
+}

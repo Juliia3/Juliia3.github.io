@@ -1,0 +1,146 @@
+@import "../variables/colors";
+@import "../variables/fonts";
+@import "../variables/sizing";
+
+ body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: $color-black;
+    font-weight: $text-weight;
+    color: $color-white;
+    font-family: $main-font;
+    cursor: url('.//../../images/cursor.png'), auto;
+}
+
+
+.page-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+a {
+    color: $color-white;
+}
+a:link {
+    color: $color-white; 
+}
+
+a:visited {
+    color: $color-white; 
+}
+
+a:active {
+    color: $color-white;
+}
+
+a:hover {
+    cursor: url('.//../../images/cursor2.png'), auto;
+    color: $color-white;
+}
+
+.button {
+    background-color: $color-white;
+    width: 184px;
+    padding: 20px 0 20px 0;
+    font-size: $text5-size;
+    font-weight: $bold-weight;
+    transition: transform 0.3s;
+    color: $color-black;
+}
+
+button:hover {
+    cursor: url('.//../../images/cursor2.png'), auto;
+    color: $color-black;
+    transform: scale(1.1);
+}
+
+
+.button2 {
+    position: absolute;
+    right: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+        @media (max-width: $phone-size) {
+            width: 85%;
+        }
+}
+
+.title-main {
+    font-size: $title-size;
+    font-weight: $bold-weight;
+    @media (max-width: $phone-size) {
+        font-size: $title2-size;
+    }
+}
+
+.title2-main {
+    font-size: $title2-size;
+    @media (max-width: $phone-size) {
+        font-size: $text2-size;
+    }
+}
+
+.text {
+    font-size: $text5-size;
+    font-weight: $bold-weight;
+}
+
+.bold {
+    font-weight: $bold-weight;
+    font-size: $text4-size;
+    @media (max-width: $phone-size) {
+        font-size: $text5-size;
+    }
+}
+
+//animations 
+.anim-box {
+    overflow: hidden;
+}
+
+._anim-show {
+    transform: translate(-120%, 0);
+    opacity: 0;
+    transition: all 1.5s ease 0s;   
+}
+
+._anim-show._active,
+._active ._anim-show {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+._anim-show-left {
+    transform: translate(220%, 0);
+    opacity: 0;
+    transition: all 1.5s ease 0s;   
+}
+
+._anim-show._active,
+._active ._anim-show-left {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+._anim-show-down {
+    transform: translate(0, -220%);
+    opacity: 0;
+    transition: all 1.5s ease 0s;   
+}
+
+._anim-show._active,
+._active ._anim-show-down {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
